@@ -5,7 +5,6 @@ require './Question'
   @player2 = Player.new("Player2", "P2")
   @turn = 1
   @current_player = @player1
-  winner = ''
 
 while @current_player.score > 0 do
   if @turn % 2 == 0 

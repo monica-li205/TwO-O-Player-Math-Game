@@ -10,6 +10,5 @@ class Question
 
   def question
     "#{@current_player}: What does #{@num1} plus #{@num2} equal?"
-    # puts "answer: #{@answer}"
   end
 end

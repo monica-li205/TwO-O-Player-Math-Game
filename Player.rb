@@ -1,5 +1,5 @@
 class Player
-  attr_accessor :name, :score, :answer, :lives
+  attr_accessor :name, :score, :answer
   def initialize(n, s)
     @name = n
     @short_name = s
@@ -10,9 +10,5 @@ class Player
   def displayScore 
     "#{@short_name}: #{@score}/3"
   end
-
-  # def answer
-  #   $stdin.gets.chomp
-  # end
 end
 
