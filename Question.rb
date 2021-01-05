@@ -1,19 +1,15 @@
 class Question
-  def initialize(cp)
+  attr_accessor :answer
+
+  def initialize(name)
     @num1 = rand(21)
     @num2 = rand(21)
-    @current_player = cp
+    @current_player = name
+    @answer = @num1 + @num2
   end
 
   def question
-    "#{current_player}: What does #{num1} plus #{num2} equal?"
-  end
-  
-  def incorrect
-    "#{current_player}: Seriously? No!"
-  end
-  
-  def correct
-    "#{current_player}: YES! You are correct."
+    "#{@current_player}: What does #{@num1} plus #{@num2} equal?"
+    # puts "answer: #{@answer}"
   end
 end
